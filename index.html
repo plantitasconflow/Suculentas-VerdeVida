@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Untitled</title>
+    
+
+  </head>
+    
+  <body>
+  <html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Suculentas VerdeVida</title>
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+
+    body{
+        background:#f4fff4;
+        color:#2d4730;
+        line-height:1.6;
+    }
+
+    header{
+        background:linear-gradient(135deg,#4caf50,#81c784);
+        color:white;
+        text-align:center;
+        padding:50px 20px;
+    }
+
+    header h1{
+        font-size:55px;
+        margin-bottom:15px;
+    }
+
+    header p{
+        font-size:20px;
+    }
+
+    nav{
+        background:#2e7d32;
+        padding:15px;
+        text-align:center;
+    }
+
+    nav a{
+        color:white;
+        text-decoration:none;
+        margin:0 20px;
+        font-weight:bold;
+        transition:0.3s;
+    }
+
+    nav a:hover{
+        color:#dcedc8;
+    }
+
+    .hero{
+        background:url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=1200') center/cover;
+        height:500px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        text-align:center;
+        color:white;
+    }
+
+    .hero-text{
+        background:rgba(0,0,0,0.5);
+        padding:30px;
+        border-radius:20px;
+    }
+
+    .hero h2{
+        font-size:45px;
+        margin-bottom:15px;
+    }
+
+    .container{
+        width:90%;
+        max-width:1200px;
+        margin:auto;
+        padding:50px 0;
+    }
+
+    .section-title{
+        text-align:center;
+        font-size:40px;
+        margin-bottom:40px;
+        color:#388e3c;
+    }
+
+    .cards{
+        display:grid;
+        grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+        gap:25px;
+    }
+
+    .card{
+        background:white;
+        border-radius:20px;
+        overflow:hidden;
+        box-shadow:0 5px 15px rgba(0,0,0,0.15);
+        transition:0.3s;
+    }
+
+    .card:hover{
+        transform:translateY(-10px);
+    }
+
+    .card img{
+        width:100%;
+        height:250px;
+        object-fit:cover;
+    }
+
+    .card-content{
+        padding:20px;
+    }
+
+    .card-content h3{
+        margin-bottom:10px;
+        color:#2e7d32;
+    }
+
+    .price{
+        font-size:24px;
+        color:#43a047;
+        font-weight:bold;
+        margin:15px 0;
+    }
+
+    .btn{
+        display:inline-block;
+        background:#4caf50;
+        color:white;
+        padding:12px 20px;
+        border-radius:10px;
+        text-decoration:none;
+        transition:0.3s;
+    }
+
+    .btn:hover{
+        background:#2e7d32;
+    }
+
+    .about{
+        background:#e8f5e9;
+        padding:60px 20px;
+        border-radius:20px;
+    }
+
+    .about p{
+        margin-bottom:20px;
+        font-size:18px;
+    }
+
+    .mission-vision{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        gap:30px;
+        margin-top:40px;
+    }
+
+    .box{
+        background:white;
+        padding:30px;
+        border-radius:20px;
+        box-shadow:0 5px 10px rgba(0,0,0,0.1);
+    }
+
+    .box h3{
+        color:#2e7d32;
+        margin-bottom:15px;
+        font-size:30px;
+    }
+
+    footer{
+        background:#1b5e20;
+        color:white;
+        text-align:center;
+        padding:30px;
+        margin-top:50px;
+    }
+
+    @media(max-width:768px){
+        .mission-vision{
+            grid-template-columns:1fr;
+        }
+
+        header h1{
+            font-size:40px;
+        }
+
+        .hero h2{
+            font-size:30px;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🌵 Suculentas VerdeVida 🌵</h1>
+    <p>Pequeñas plantas, grandes sonrisas.</p>
+</header>
+
+<nav>
+    <a href="#productos">Productos</a>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#mision">Misión</a>
+    <a href="#vision">Visión</a>
+    <a href="#contacto">Contacto</a>
+</nav>
+
+<section class="hero">
+    <div class="hero-text">
+        <h2>Llena tu hogar de vida y naturaleza</h2>
+        <p>Las suculentas perfectas para decorar tu habitación, oficina o jardín.</p>
+    </div>
+</section>
+
+<section class="container" id="productos">
+
+    <h2 class="section-title">🌱 Nuestras Suculentas 🌱</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <img src="https://cdn11.bigcommerce.com/s-oqm1pc/images/stencil/631x631/products/1175/20298/Sedum_nussbaumerianum_lifestyle__40679.1739796414.jpg?c=3" alt="Suculenta">
+            <div class="card-content">
+                <h3>Sedum nussbaumerianum</h3>
+                <p>
+                    La <strong>Sedum nussbaumerianum</strong> es una suculenta de hojas doradas y brillantes que cambia de color con la luz del sol. Fácil de cuidar y perfecta para decorar cualquier espacio. 🌵
+
+                </p>
+                <div class="price">RD$350</div>
+                <a href="#" class="btn">Comprar</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://www.picturethisai.com/image-handle/website_cmsname/image/1080/153778641195499523.jpeg?x-oss-process=image/format,webp/resize,s_800&v=1.0" alt="Flor del Desierto">
+            <div class="card-content">
+                <h3>Flor del Desierto</h3>
+                <p>
+                    Una suculenta exótica con un tronco grueso y flores hermosas.
+                    Perfecta para decorar espacios modernos y tropicales.
+                </p>
+                <div class="price">RD$800</div>
+                <a href="#" class="btn">Comprar</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Aasblume_Aug_2005.jpg/960px-Aasblume_Aug_2005.jpg" alt="Stapelia">
+            <div class="card-content">
+                <h3>Stapelia Estrella</h3>
+                <p>
+                    Una suculenta única con flores en forma de estrella y un
+                    aspecto exótico que llama la atención en cualquier espacio.
+                </p>
+                <div class="price">RD$200</div>
+                <a href="#" class="btn">Comprar</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="container" id="nosotros">
+
+    <div class="about">
+
+        <h2 class="section-title">🌿 Sobre Nosotros 🌿</h2>
+
+        <p>
+            En <strong>Suculentas VerdeVida</strong> creemos que las plantas no solo decoran,
+            sino que también transmiten tranquilidad, energía positiva y alegría.
+            Nuestro objetivo es ofrecer suculentas hermosas, saludables y accesibles
+            para todas las personas que quieran darle un toque natural a sus espacios.
+        </p>
+
+        <p>
+            Cada una de nuestras suculentas es cuidada con dedicación, utilizando
+            técnicas especiales para garantizar plantas fuertes y duraderas.
+            Además, enseñamos a nuestros clientes cómo mantenerlas saludables
+            con cuidados simples y prácticos.
+        </p>
+
+        <p>
+            Vendemos suculentas desde RD$200 para que todos puedan disfrutar
+            de una decoración natural sin gastar demasiado dinero.
+        </p>
+
+        <div class="mission-vision">
+
+            <div class="box" id="mision">
+                <h3>🌱 Misión</h3>
+
+                <p>
+                    Nuestra misión es llevar naturaleza y bienestar a los hogares
+                    dominicanos mediante la venta de suculentas accesibles,
+                    hermosas y fáciles de cuidar.
+                </p>
+
+                <p>
+                    Queremos inspirar a las personas a conectar con el medio ambiente,
+                    decorar sus espacios de forma natural y aprender a valorar las plantas
+                    como parte importante de la vida diaria.
+                </p>
+
+                <p>
+                    Nos comprometemos a brindar excelente calidad, buen servicio
+                    y orientación para que cada cliente pueda disfrutar de una experiencia
+                    agradable al adquirir nuestras suculentas.
+                </p>
+            </div>
+
+            <div class="box" id="vision">
+                <h3>🌎 Visión</h3>
+
+                <p>
+                    Ser una de las tiendas de suculentas más reconocidas de República Dominicana,
+                    destacándonos por nuestra calidad, creatividad y amor por la naturaleza.
+                </p>
+
+                <p>
+                    Aspiramos a crear una comunidad de personas apasionadas por las plantas,
+                    promoviendo la decoración ecológica y el cuidado del medio ambiente.
+                </p>
+
+                <p>
+                    En el futuro queremos expandir nuestro catálogo con macetas personalizadas,
+                    jardines miniatura y talleres educativos sobre plantas y jardinería.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="container" id="contacto">
+
+    <h2 class="section-title">📞 Contáctanos 📞</h2>
+
+    <div class="about">
+
+        <p><strong>📍 Dirección:</strong> Santo Domingo, República Dominicana</p>
+        <p><strong>📱 Teléfono:</strong> +1 (809) 855-2020</p>
+        <p><strong>📧 Correo:</strong> verdevida@gmail.com</p>
+        <p><strong>🕒 Horario:</strong> Lunes a Sábado de 9:00 AM a 6:00 PM</p>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>🌵 2026 Suculentas VerdeVida | Todos los derechos reservados 🌵</p>
+</footer>
+
+</body>
+</html>
+    
+  </body>
+  
+</html>
